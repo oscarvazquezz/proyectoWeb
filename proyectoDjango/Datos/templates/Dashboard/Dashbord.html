@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html>
+     <head>
+      <meta charset="utf-8">
+         <title>
+             Dashbord
+         </title>
+         {% load bootstrap4 %}
+         {% bootstrap_css %}
+     </head>
+     <body  style="text-align: center;background-color:#152CC4">
+         <h1>Bienvenido a tu Dashboard</h1>
+         <a class="btn btn-dark"  href="{% url 'Login:Login'%}">Cerrar Sesion</a> <br> 
+         {% bootstrap_javascript jquery='full' %}
+     </body>
+     
+</html>
