@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="820.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="horcado.address.view.control">
+	<children>
+       <ImageView fitHeight="847.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Imangen/imagen/asuka.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="92.0" layoutY="72.0" prefHeight="698.0" prefWidth="646.0">
+         <children>
+            <HBox fx:id="listaBotones" layoutX="41.0" layoutY="523.0" prefHeight="51.0" prefWidth="571.0" spacing="18.0">
+               <children>
+                  <Button fx:id="botonA" mnemonicParsing="false" onAction="#activarBoton" prefHeight="41.0" prefWidth="45.0" style="-fx-background-color: white;" text="a">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botonB" mnemonicParsing="false" onAction="#activarBoton" prefHeight="41.0" prefWidth="45.0" style="-fx-background-color: white;" text="b">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botonC" mnemonicParsing="false" onAction="#activarBoton" prefHeight="41.0" prefWidth="45.0" style="-fx-background-color: white;" text="c">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botonD" mnemonicParsing="false" onAction="#activarBoton" prefHeight="41.0" prefWidth="45.0" style="-fx-background-color: white;" text="d">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botonE" mnemonicParsing="false" onAction="#activarBoton" prefHeight="37.0" prefWidth="45.0" style="-fx-background-color: white;" text="e">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botonF" mnemonicParsing="false" onAction="#activarBoton" prefHeight="41.0" prefWidth="45.0" style="-fx-background-color: white;" text="f">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botonG" mnemonicParsing="false" onAction="#activarBoton" prefHeight="41.0" prefWidth="45.0" style="-fx-background-color: white;" text="g">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botonH" mnemonicParsing="false" onAction="#activarBoton" prefHeight="41.0" prefWidth="45.0" style="-fx-background-color: white;" text="h">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botonI" mnemonicParsing="false" onAction="#activarBoton" prefHeight="41.0" prefWidth="45.0" style="-fx-background-color: white;" text="i">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="41.0" layoutY="585.0" spacing="18.0">
+               <children>
+                  <Button fx:id="botonJ" mnemonicParsing="false" onAction="#activarBoton" prefHeight="41.0" prefWidth="45.0" style="-fx-background-color: white;" text="j">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botonK" mnemonicParsing="false" onAction="#activarBoton" prefHeight="41.0" prefWidth="45.0" style="-fx-background-color: white;" text="k">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botonL" mnemonicParsing="false" onAction="#activarBoton" prefHeight="41.0" prefWidth="45.0" style="-fx-background-color: white;" text="l">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botonM" mnemonicParsing="false" onAction="#activarBoton" prefHeight="44.0" prefWidth="47.0" style="-fx-background-color: white;" text="m">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botonN" mnemonicParsing="false" onAction="#activarBoton" prefHeight="41.0" prefWidth="45.0" style="-fx-background-color: white;" text="n">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botonnl" mnemonicParsing="false" onAction="#activarBoton" prefHeight="41.0" prefWidth="45.0" style="-fx-background-color: white;" text="ñ">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botonO" mnemonicParsing="false" onAction="#activarBoton" prefHeight="41.0" prefWidth="45.0" style="-fx-background-color: white;" text="o">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botonP" mnemonicParsing="false" onAction="#activarBoton" prefHeight="41.0" prefWidth="45.0" style="-fx-background-color: white;" text="p">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botonQ" mnemonicParsing="false" onAction="#activarBoton" prefHeight="41.0" prefWidth="45.0" style="-fx-background-color: white;" text="q">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="41.0" layoutY="648.0" prefHeight="44.0" prefWidth="551.0" spacing="18.0">
+               <children>
+                  <Button fx:id="botonR" mnemonicParsing="false" onAction="#activarBoton" prefHeight="41.0" prefWidth="45.0" style="-fx-background-color: white;" text="r">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botonS" mnemonicParsing="false" onAction="#activarBoton" prefHeight="41.0" prefWidth="45.0" style="-fx-background-color: white;" text="s">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botonT" mnemonicParsing="false" onAction="#activarBoton" prefHeight="41.0" prefWidth="45.0" style="-fx-background-color: white;" text="t">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botonU" mnemonicParsing="false" onAction="#activarBoton" prefHeight="41.0" prefWidth="45.0" style="-fx-background-color: white;" text="u">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botonV" mnemonicParsing="false" onAction="#activarBoton" prefHeight="41.0" prefWidth="45.0" style="-fx-background-color: white;" text="v">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botonW" mnemonicParsing="false" onAction="#activarBoton" prefHeight="44.0" prefWidth="58.0" style="-fx-background-color: white;" text="w">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botonX" mnemonicParsing="false" onAction="#activarBoton" prefHeight="41.0" prefWidth="45.0" style="-fx-background-color: white;" text="x">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botonY" mnemonicParsing="false" onAction="#activarBoton" prefHeight="41.0" prefWidth="45.0" style="-fx-background-color: white;" text="y">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botonZ" mnemonicParsing="false" onAction="#activarBoton" prefHeight="41.0" prefWidth="45.0" style="-fx-background-color: white;" text="z">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <Line endX="439.0" endY="-16.0" layoutX="144.0" layoutY="493.0" startX="-91.0" startY="-12.0" stroke="#5e00ff" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="44.0" layoutX="90.0" layoutY="334.0" stroke="BLACK" strokeType="INSIDE" width="163.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="0.6941747572815534" startY="0.38349514563106796">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Line endX="-20.0" endY="-191.0" layoutX="195.0" layoutY="250.0" smooth="false" startX="-20.0" startY="84.0" stroke="#3d05e4" />
+            <Line endX="112.0" layoutX="272.0" layoutY="51.0" startX="-100.0" stroke="#3f00d9" />
+            <Line endX="426.0" endY="-14.0" layoutX="152.0" layoutY="434.0" startX="-100.0" startY="-14.0" stroke="#5e00ff" />
+            <HBox fx:id="texto" layoutX="53.0" layoutY="430.0" prefHeight="51.0" prefWidth="522.0" />
+            <ImageView fx:id="cabeza" fitHeight="80.0" fitWidth="79.0" layoutX="346.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../../../../Imangen/imagen/cabeza.jpg" />
+               </image></ImageView>
+            <ImageView fx:id="cuerpo" fitHeight="94.0" fitWidth="91.0" layoutX="339.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../../../../Imangen/imagen/cuerpo.gif" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="pierna2" disable="true" fitHeight="104.0" fitWidth="77.0" layoutX="352.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../../../../Imangen/imagen/Pierna.gif" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="pierna1" disable="true" fitHeight="67.0" fitWidth="90.0" layoutX="352.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../../../../Imangen/imagen/Pierna2.gif" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="brazo1" fitHeight="117.0" fitWidth="121.0" layoutX="253.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../../../../Imangen/imagen/Brazo1.gif" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="brazo2" fitHeight="104.0" fitWidth="57.0" layoutX="401.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../../../../Imangen/imagen/Brazo2.gif" />
+               </image>
+            </ImageView>
+            <Line endX="-49.5" endY="20.0" layoutX="433.0" layoutY="65.0" startX="-49.5" startY="-12.5" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="click" layoutX="14.0" layoutY="776.0" mnemonicParsing="false" onAction="#accion" prefHeight="51.0" prefWidth="121.0" style="-fx-background-color: red; -fx-border-color: black; -fx-background-radius: 22; -fx-border-radius: 20;" text="Reniciar" textFill="WHITE" />
+      <Label fx:id="nombre" layoutX="303.0" layoutY="773.0" prefHeight="39.0" prefWidth="79.0" textFill="WHITE" />
+      <Button fx:id="Salir" layoutX="657.0" layoutY="776.0" mnemonicParsing="false" onAction="#Salir" prefHeight="51.0" prefWidth="121.0" style="-fx-background-color: red; -fx-border-color: black; -fx-background-radius: 22; -fx-border-radius: 20;" text="Salir" textFill="WHITE" />
+      <ImageView fitHeight="141.0" fitWidth="146.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Imangen/imagen/wille.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="vida6" fitHeight="107.0" fitWidth="57.0" layoutX="731.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Imangen/imagen/c.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="vida5" fitHeight="107.0" fitWidth="57.0" layoutX="674.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Imangen/imagen/c.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="vida4" fitHeight="107.0" fitWidth="57.0" layoutX="629.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Imangen/imagen/c.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="vida3" fitHeight="107.0" fitWidth="57.0" layoutX="572.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Imangen/imagen/c.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="vida2" fitHeight="70.0" fitWidth="57.0" layoutX="515.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Imangen/imagen/c.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="vida1" fitHeight="107.0" fitWidth="57.0" layoutX="458.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Imangen/imagen/c.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="382.0" layoutY="8.0" text="Vidas" textFill="#e8e8e8">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+   </children>
+	
+</AnchorPane>
