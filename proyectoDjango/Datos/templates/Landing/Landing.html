@@ -10,12 +10,11 @@
          {% bootstrap_css %}
      </head>
 
-     <body>
-       <div style="text-align: center">
-        <a  href="{% url 'Login:Login'%}">ir al login</a> <br>
-        <br> <br>
-        <img src="https://images8.alphacoders.com/830/thumb-1920-830185.png" style="width: 200px;height: 200px;" class="mb-4 rounded-circle">
-       </div>
+     <body style="background-color:#483d8b; text-align: center">
+
+        <br><br>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQFvDIU26_8cxG5ZaL0Nzc-eHZynj2QtXLfO5kfRLvQRgQPIko1" style="width: 150px;height: 150px;" class="mb-4 rounded-circle">
+
       <div id="carouselExampleCaptions" style="width: 600px; margin-top: 1%;" class="carousel slide mx-auto" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -27,7 +26,7 @@
           <div class="carousel-item active" >
             <img src="https://images8.alphacoders.com/830/thumb-1920-830185.png"  class="d-block w-100" alt="">
             <div class="carousel-caption d-none d-md-block">
-              <h5 >Fate Grand Order</h5>
+              <h5 style="color: azure;">Fate Grand Order</h5>
             </div>
           </div>
   
@@ -55,6 +54,8 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
+       <br><br>
+       <a style="color: azure;" href="{% url 'Login:Login'%}">ir al login</a>
         {% bootstrap_javascript jquery='full' %}
      </body>
 </html>

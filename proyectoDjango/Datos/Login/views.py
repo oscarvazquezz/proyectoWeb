@@ -30,10 +30,10 @@ class LoginClass(View):
             if next_url:
                 return redirect(next_url)
             else:
-                return redirect('Dashboard:Dashboard')
+                return redirect('Dashboard:Dashboard') 
 
         else:
-            self.messege = 'verifica tu usuario o tu contraseña'
+            self.messege = 'verifica tu usuario o contraseña'
             
         return render(request,self.template,self.get_context())
     

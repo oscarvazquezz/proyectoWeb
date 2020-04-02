@@ -1,6 +1,6 @@
 @echo off
 
-set "VIRTUAL_ENV=C:\Users\camar\OneDrive\Escritorio\programa\webDjango\prac1\practica"
+set "VIRTUAL_ENV=C:\Users\camar\OneDrive\Escritorio\programa\webDjango\proyectoDjango\practica"
 
 if defined _OLD_VIRTUAL_PROMPT (
     set "PROMPT=%_OLD_VIRTUAL_PROMPT%"

@@ -4,4 +4,4 @@ from django.views.generic import View
 
 class LandingClass(View):
     def get(self,request,*args,**kwargs):
-        return render(request,'Landing/Landing.html')
+        return render(request,'Landing/Landing.html',{})

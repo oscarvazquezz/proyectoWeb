@@ -9,9 +9,24 @@
          {% load bootstrap4 %}
          {% bootstrap_css %}
      </head>
-     <body  style="text-align: center;background-color:#152CC4">
-         <h1>Bienvenido a tu Dashboard</h1>
-         <a class="btn btn-dark"  href="{% url 'Login:Login'%}">Cerrar Sesion</a> <br> 
+     <body style="text-align: center;background-color:#483d8b"></body>
+         <h1 style="color:aliceblue">Bienvenido a tu Dashboard</h1>
+         <br><br>
+         <div>
+            <div class ="mx-auto border border-white; rounded-lg modal-body"  style="width: 500px;">
+                <h1 style="font-size: 30px;color:aliceblue">Usuario: </h1>
+                <h1 style="font-size: 30px;color:aliceblue">{{user.username}}</h1> <br>
+                <h1 style="font-size: 30px;color:aliceblue">Nombre Completo:</h1>
+                <h1 style="font-size: 30px;color:aliceblue">{{user.first_name}} {{user.last_name}}</h1> <br>
+                <h1 style="font-size: 30px;color:aliceblue" >Correo:</h1>
+                <h1 style="font-size: 30px;color:aliceblue" >{{user.email}}</h1><br>
+            </div>
+         </div>
+         <br><br>
+         <form method="POST" action="">
+            {% csrf_token%}
+            <button class="btn btn-dark"  type="submit">Cerrar Sesion</button>
+        </form>
          {% bootstrap_javascript jquery='full' %}
      </body>
      

@@ -9,24 +9,23 @@
          {% load bootstrap4 %}
          {% bootstrap_css %}
      </head>
-     <body  style="text-align: center;background-color:#152CC4">
+     <body  style="text-align: center;background-color:#483d8b">
       <form method="POST" action="">
          {% csrf_token%}
          <div>
-            <div class ="mx-auto border border-white; rounded-lg modal-body" style="width: 300px;  margin-top: 10%;">
+            <div class ="mx-auto border border-white; rounded-lg modal-body" style="width: 300px;  margin-top: 9.5%;">
               <br>
               <!-- Iinicio Imangen -->
               <img class="mb-4 rounded-circle" width="75" height="75" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQFvDIU26_8cxG5ZaL0Nzc-eHZynj2QtXLfO5kfRLvQRgQPIko1"><br>
              <!-- Fin Imangen -->
               <br>
-               <input type="text"  class=" form-control ds-input border border-dark"  name="user" placeholder="Usuario" required><br><br>
-              
-               <input type="password"  class="form-control ds-input border border-dark"  name="password" placeholder="Contraseña" required><br>
-              
+               <input type="text"  class=" form-control ds-input" name="user" placeholder="Usuario" required><br><br>
+               <input type="password"  class="form-control ds-input" name="password" placeholder="Contraseña" required><br>
                <button class="btn btn-dark" type="submit" >Iniciar sesion</button><br><br>
-               <a style="color: azure;" href="{% url 'Landing:Landing'%}">ir al landing </a> <br><br>
+               <a style="color: azure;" href="{% url 'Landing:Landing'%}">ir al landing </a><br>
+               <a style="color: azure;" href="{% url 'Registro:Registro'%}">Registro</a><br> <br>
                {% if error %}
-                  <h1 style="font-size: 25px;color: azure;"> {{error}} </h1> 
+                  <h1 style="font-size: 18px;color: azure;"> {{error}} </h1> 
                {%endif%}
           </div>
          </div>     
