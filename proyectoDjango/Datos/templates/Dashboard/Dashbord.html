@@ -9,25 +9,41 @@
          {% load bootstrap4 %}
          {% bootstrap_css %}
      </head>
-     <body style="text-align: center;background-color:#483d8b"></body>
-         <h1 style="color:aliceblue">Bienvenido a tu Dashboard</h1>
-         <br><br>
-         <div>
-            <div class ="mx-auto border border-white; rounded-lg modal-body"  style="width: 500px;">
-                <h1 style="font-size: 30px;color:aliceblue">Usuario: </h1>
-                <h1 style="font-size: 30px;color:aliceblue">{{user.username}}</h1> <br>
-                <h1 style="font-size: 30px;color:aliceblue">Nombre Completo:</h1>
-                <h1 style="font-size: 30px;color:aliceblue">{{user.first_name}} {{user.last_name}}</h1> <br>
-                <h1 style="font-size: 30px;color:aliceblue" >Correo:</h1>
-                <h1 style="font-size: 30px;color:aliceblue" >{{user.email}}</h1><br>
-            </div>
+     <body style="background-color:#7702a0;" class="container"></body>
+
+         <div style="background-color:#31639c;text-align: center;">
+            <h1 style="color:aliceblue">Bienvenido a tu correo</h1>
+         </div>
+         <br>
+
+         <div style="background-color:#31639c">
+            <br><br>
+             <div class="containe" > 
+                <div class="text-center">
+                    <img class="mb-4 rounded-circle"  width="150" height="150" src="https://pm1.narvii.com/6209/726cee83a786f85e230aacc62d28a62765316d51_hq.jpg">
+                 </div>
+                 <div class= "text-center">
+                    <h1 style="font-size: 30px;color:aliceblue">Usuario: </h1>
+                    <h1 style="font-size: 30px;color:aliceblue">{{user.username}}</h1> <br>
+                    <h1 style="font-size: 30px;color:aliceblue">Nombre Completo:</h1>
+                    <h1 style="font-size: 30px;color:aliceblue">{{user.first_name}} {{user.last_name}}</h1> <br>
+                    <h1 style="font-size: 30px;color:aliceblue" >Correo:</h1>
+                    <h1 style="font-size: 30px;color:aliceblue" >{{user.email}}</h1><br>
+                 </div>
+             </div>
+
          </div>
          <br><br>
+
          <form method="POST" action="">
             {% csrf_token%}
-            <button class="btn btn-dark"  type="submit">Cerrar Sesion</button>
+            <div style="text-align: center;">
+                <button class="btn btn-dark" style="width: 300px;" type="submit">Cerrar Sesion</button>
+            </div>
         </form>
+        
          {% bootstrap_javascript jquery='full' %}
      </body>
      
 </html>
+
